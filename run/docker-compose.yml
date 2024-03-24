@@ -1,0 +1,9 @@
+version: '2.4'
+
+services:
+
+  app:
+    image: ${IMAGE}
+    command: python -m cli start api
+    container_name: tracker_app
+    network_mode: host
